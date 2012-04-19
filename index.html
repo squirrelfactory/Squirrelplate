@@ -5,69 +5,27 @@
 		<meta name="description" content="A HTML5 + CSS3 starting point&mdash;designed for squirrels and other small clawed creatures">
   		<meta name="author" content="Andy Beer">
 		<base href="" />
-		
-		<!-- Google Site verificaton-->
-		
-		 <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+		 <!-- Optimise for mobile view ports -->
  		 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		<!-- Styles-->
 		<link rel="stylesheet" type="text/css" href="assets/css/core.css" />
-		
 		<!-- Icons-->
   		<link rel="shortcut icon" href="/favicon.ico">
   		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  		
 		<!-- Fonts-->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
-		
-		<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects 
- 		<script src="js/libs/modernizr-1.7.min.js"></script>-->
-
 	</head>
 	
 	<body>
-		
-		<!--<div id="print-masthead">
-				<p>Address Line 1<br/>Address Line 2<br/>Address Line 3</p>
-				<img src="assets/images/core/print-logo.png" alt="logo" />
-			</div>-->
 		<header>
 			<h1>Squirrelplate</h1>
 			<h2>Designed and built for squirrels and other small clawed creatures by the squirrelfactory</h2>
-			
 		</header>		
 		
 		<section>
-			
-			<p>Squirrelplate – an HTML5 and css template which is 100% fluid in width &mdash; it has been built so you can see how different elements scale
-			across different browsers and devices. It is a starting point to allow you to build a very quick fluid HTML page.</p>
-		
-			
-			<ul>
-				<li>HTML5 reset and basic styling
-				<li>Simple Print Styling
-				<li>100% Fluid &mdash; no media queries
-			</ul>
-			<p>Download the HTML and css</p>
+			<p>Squirrelplate – a fluid template template which is designed to work on all screen sizes from tiny mobile up to large desktops. Ideally suited for creating simple, elegant web pages that focuses on content.</p>
 		</section>
-		
-		
-		<!---		<h2 class="squirrel">Percentage Based Grids</h2>
-		
-		<section class="clearfix">
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-			<div class="col"></div>
-		</section>--->
 		
 		
 		<h2 class="squirrel">Sections</h2>
@@ -314,12 +272,22 @@
             </fieldset>
 </section>
 
+<h2 class="squirrel">The Details</h2>
 
-		<div id="container">
-		
-		<h3>To Do</h3>
+<section>
+	<p>The concept of Squirrelplate is to create a really simple fluid template that focuses on content and how it adapts to the size of the screen. Go ahead, view the template on different sized screens.</p>
+	
+	<ul>
+		<li>Minimal css
+		<li>No media queries
+		<li>No complicated grid systems
+	</ul>
+	
+</section>
+
+<h2 class="squirrel">To Do</h2>
+		<section>
 		<ul>
-			<li>Overview - explain 100% fluid concept
 			<li>Grid
 			<li>Sections
 			<li>Resolve pre tag
@@ -336,85 +304,14 @@
 			<li>Modal boxes
 			<li>Update with latest boilerplate build
 			<li>Video tag on iPhone
-			<li>Grid system - percentage based - update to on page load	
 			<li>Create a list of test devices &ndash; iPhone, iPad, Kindle, Android (various)
 			<li>Consider changing name to fluidity
 		</ul>
-
-
-			<p class="s-width">screen width =</p>
+	</section>
+		
 			
-			<footer><p>&copy; 2012 Flamingsquirrel </p><p>Developed by Squirrelfactory.</p></footer>
-		</div>
-		
-		
-		
-		
-		
-		  <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
- 		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
- 		 <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+	<footer><p>&copy; 2012 Flamingsquirrel </p><p>Developed by Squirrelfactory.</p></footer>
 
-		  <!-- scripts concatenated and minified via ant build script-->
-		  <script src="assets/js/jquery.superfish.js"></script>
-		  <script src="assets/js/plugins.js"></script>
-		  <script src="assets/js/script.js"></script>
-		  <script src="assets/js/common.js"></script>
-		  <!-- end scripts-->
-		
-		 <!--[if lt IE 7 ]>
-		    <script src="js/libs/dd_belatedpng.js"></script>
-		   <script>DD_belatedPNG.fix("img, .png_bg"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
-		 <![endif]-->
 	
-
-
-
-<script type=text/javascript>
-	jQuery(function($) {
-		loadOptimisedImages = function() {
-			// get the document width
-			var documentWidth = $(document).width();
-			$('#grid').height($(document).height());
-			
-			// blank means use the image from the src attribute
-			var screenType = 'mobile';
-			if(documentWidth >= 991) {
-				// big screen
-				screenType = 'big';
-			} else if(documentWidth >= 768) {
-				// big screen
-				screenType = 'tablet';
-			} else if(documentWidth >= 480) {
-				// medium device, for example a tablet
-				screenType = 'mobile-wide';
-			}
-			if(screenType != '') {
-				// find all images with the data-src-xyz attribute
-				$('img[data-src-' + screenType + ']').each(function() {
-					$this = $(this);
-					// set the src attribute to the optimised version
-					$this.attr('src', $this.attr('data-src-' + screenType));
-				});
-				$('.s-width').html(' ' + documentWidth);
-			}
-		}
-		$(window).bind('load resize', loadOptimisedImages);
-		
-	});
-
-</script>
-
-
-		  <!-- mathiasbynens.be/notes/async-analytics-snippet Change UA-XXXXX-X to be your site's ID -->
-		  <script>
-			var _gaq = [["_setAccount", "UA-XXXXX-X"], ["_trackPageview"]]; ( function(d, t) {
-				var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-				g.async = 1;
-				g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-				s.parentNode.insertBefore(g, s)
-			}(document, "script"));
-
-		  </script>
 	</body>
 </html>
