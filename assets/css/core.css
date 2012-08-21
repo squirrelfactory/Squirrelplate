@@ -11,7 +11,7 @@ abbr,acronym{ border:0; }
 
 /* Core styles
 ----------------------------------------------------------------------------------------------------------------------- */
-body{ -webkit-text-size-adjust:100%; background:#f0f0f0; color:#444; font-family:"Helvetica Neue",Helvetica,"Lucida Grande",sans-serif; font-size:100%; } /* Stops Mobile Safari from auto-adjusting font-sizes */
+body{ -webkit-text-size-adjust:100%; background:#f0f0f0; color:#444; font-family:"Helvetica Neue",Helvetica,"Lucida Grande",sans-serif; font-size:100%; line-height:0;} /* Stops Mobile Safari from auto-adjusting font-sizes */
 
 /* Sections and grouping content */
 h1,h2,h3,h4,h5,h6{ color:#000; font-family:"Helvetica Neue",Copse,Georgia,serif; font-weight:bold; margin:16px 0 16px; }
