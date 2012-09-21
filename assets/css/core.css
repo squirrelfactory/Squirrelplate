@@ -1,17 +1,14 @@
   /*
   ================================================
-  Handcrafted by :
-  Last updated on :
+  Handcrafted by : @squirrelfactory
   ================================================
   Contents:
+  	01 Global Reset
     01 Sensible defaults
 
   ================================================
   */
 
-/* NEEDS ATTENTION 
-	All fonts and line spacing needs attention
-*/
 
 
 /* ==========================================================================
@@ -66,7 +63,7 @@ body {
 
 /* Typography, sections and grouping content */
 
-/* Em Measurements
+/* Em Measurements divide target by 16
 10 = 0.625em
 11 = 0.6875em
 12 = 0.75em
@@ -78,22 +75,25 @@ body {
 18 = 1.125em
 19 = 1.1875em
 20 = 1.25em
+21 = 1.3125em
+22 = 1.375em
+23 = 1.4375em
 ----------------------------------------------------------------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 {
 	margin:16px 0 16px;
-	color:#000;
+	color:#444;
 	font-family:"Helvetica Neue", sans-serif;
 	font-weight:bold;
 	line-height:1em;
 }
 
-h1 { font-size:2.4em; }
-h2 { font-size:2.2em; }
-h3 { font-size:1.6em; }
-h4 { font-size:1.5em; }
-h5 { font-size:1.4em; }
-h6 { font-size:1.3em; }
+h1 { font-size:1.4375em; }
+h2 { font-size:1.3125em; }
+h3 { font-size:1.1875em; }
+h4 { font-size:1.0625em; }
+h5 { font-size:1.0625em; }
+h6 { font-size:1.0625em; }
 
 
 p, address, caption {
@@ -112,6 +112,7 @@ hr {
 	height:1px;
 }
 
+/* Pre: marking up blocks of code */
 pre {
 	background:#fff;
 	border:1px dotted #c3c3c3;
@@ -119,13 +120,18 @@ pre {
 	font-size:1.1em;
 	margin-bottom:25px;
 	overflow-y:hidden;
-	padding:0;
+	padding:25px 15px 15px 25px;
+	line-height:0;
 }
 
 pre ol {
 	margin:0 0 0 22px;
 	list-style:decimal;
-	padding:20px;
+	padding:0!important;
+}
+
+pre li {
+	line-height: 0.8125em;	
 }
 
 blockquote {
@@ -139,12 +145,12 @@ blockquote {
 
 ol {
 	list-style-type:decimal;
-	margin:10px 0 25px 0;
+	margin:10px 0 25px 22px;
 }
 
 ul {
 	list-style-type:disc;
-	margin:10px 0 25px 0;
+	margin:10px 0 25px 18px
 }
 
 dl {
@@ -153,9 +159,11 @@ dl {
 
 figure { 
 	margin-bottom:25px;
+	font-size:0.875em;
 }
 
 figcaption {
+	padding:20px 0 0 0;
 	font-style:italic;
 }
 
@@ -170,6 +178,7 @@ table td {
 }
 
 li li { font-size:1em; }
+
 
 /* 
  * Reduce sizing of fonts if tags appear inside table cells 
@@ -449,6 +458,34 @@ input.btn {
 } 
 
 
+
+/* ==========================================================================
+   Site Specific Styles
+   ========================================================================== */
+
+body {
+	padding:20px 10%;
+}
+
+header	{
+}
+
+
+/* Style the first h2 tag */
+section h2:first-child {
+	border-top:1px dotted #979797;
+	border-bottom:1px dotted #979797;
+	text-transform: uppercase;
+	font-size:1.2em;
+	padding:13px 0;
+	border-radius:3px;
+	color:#000;
+	margin:0 0 30px 0;
+}
+
+body h1:first-child{
+	font-size:2.4em;
+}
 
 
 
