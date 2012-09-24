@@ -10,6 +10,14 @@
   */
 
 
+/* ==========================================================================
+   Debugging
+   ========================================================================== */
+
+* {
+	/* outline: 1px dotted red; */
+}
+
 
 /* ==========================================================================
    Global Reset
@@ -30,6 +38,16 @@ caption,th { text-align:left; }
 q:before,q:after { content:""; }
 
 abbr,acronym { border:0; }
+
+/* change the box – model makes the final rendered box the declared width, and any border and padding cut inside the box [http://css-tricks.com/box-sizing/]
+*/
+
+* { 
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
 
 
 /* ==========================================================================
@@ -259,7 +277,7 @@ a[href^=tel]{
    
 img {
 	margin:0 0 0 0;
-	max-width:100%; /* Only comes into play on responsivbe sites */
+	max-width:100%; /* Only comes into play on responsive sites */
 }
 
 iframe {
@@ -368,7 +386,7 @@ textarea {
 	margin:5px 0 5px 0;
 	padding:5px;
 	vertical-align:middle;
-	width:99%;
+	width:100%;
 }
 
 input[type="search"]{
@@ -501,4 +519,88 @@ body h1{
 }
 
 
+/* ==========================================================================
+   Grids
+   ========================================================================== */
+
+
+
+.grid {
+	padding:0.25em;
+	overflow: hidden;
+	margin:0 0 40px 0;
+	list-style-type: none;
+}
+
+
+.grid li {
+	float: left;
+	width: 50%;
+	padding:0.25em;
+	display: list-item;
+}
+
+.grid img {
+	display: block;
+}
+
+.grid img:hover {
+	border:1px solid #ababab;
+}
+
+.grid li:nth-child(odd) {
+	clear: left;
+}
+
+
+@media screen and (min-width: 640px) {
+	.grid li {
+		width: 33.3333333333333333%; 
+	}
+	
+	.grid li:nth-child(3n+1) {
+		clear: left;
+	}
+	
+	.grid li:nth-child(odd) {
+		clear: none;
+	}
+}
+
+@media screen and (min-width: 880px) {
+	.grid li {
+		width: 25%; 
+	}
+	.grid li:nth-child(4n+1) {
+		clear: left;
+	}
+	.grid li:nth-child(3n+1) {
+		clear: none;
+	}
+}
+
+@media screen and (min-width: 1152px) {
+	.grid li {
+		width: 20%; 
+	}
+	.grid li:nth-child(5n+1) {
+		clear: left;
+	}
+	.grid li:nth-child(4n+1) {
+		clear: none;
+			}
+}
+		
+@media screen and (min-width: 1440px) {
+	.grid li {
+		width: 16.666666666%; 
+	}
+	.grid li:nth-child(6n+1) {
+		clear: left;
+	}
+	.grid li:nth-child(5n+1) {
+		clear: none;
+	}
+}
+  
 
