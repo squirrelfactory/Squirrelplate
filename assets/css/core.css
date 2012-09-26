@@ -609,6 +609,12 @@ body h1{
 /* Grid Listing
    ========================================================================== */
 
+/* Inspiration and code from [http://codepen.io/bradfrost/full/GlrHv]
+ * Standard listing stacked one above each other for small screens
+ * Listing changes to grid depending on screen width
+*/
+
+
 .listing {
 	margin:0 0 20px 0;
 	padding:0;
@@ -620,6 +626,7 @@ body h1{
 	border-collapse: collapse;
 	width: 100%;
 	margin:0 0 10px 0;
+	border-bottom:1px solid #dbdbdb;
 }
 
 .inner {
@@ -638,11 +645,12 @@ body h1{
 	display:block;
 	width:100%;
 	height:auto;
+	padding-bottom:10px;
 }
 
 .listing li .details{
 	display: table-cell;
-	vertical-align: auto;
+	vertical-align: top;
 	width: 60%;
 }
 
@@ -662,6 +670,7 @@ body h1{
 	    display: block;
 	    width: 50%;
 	    float: left;
+	    border:none;
 	}
 	  
 	.listing li .img-holder, .listing li .details, .inner{
