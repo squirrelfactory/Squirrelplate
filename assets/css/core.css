@@ -256,7 +256,6 @@ sup {}
 i {}
 
 b {
-	font-style:italic;
 	font-weight:bold;
 }
 
@@ -390,8 +389,11 @@ textarea {
 	width:100%;
 }
 
+textarea {
+	height:120px;
+}
+
 input[type="search"]{
-	background:red;
 	padding:10px;
 }
 
@@ -698,7 +700,107 @@ body h1{
   
    
    
+/* ==========================================================================
+   Print Stylesheet
+   ========================================================================== */
+
+@media print {
+
+	body {
+	width:100% !important;
+	margin:0 !important;
+	padding:0 !important;
+	line-height: 1.4em;
+	font-size:9pt;
+	background:none;
+	color:#444;
+	}
+	
+	/* Headings */
+	h1, h2, h3, h4, h5, h6 { 
+	margin:20px 0 10px 0;
+	color:#000;
+	}
+	
+	h1 { 
+	font-size:13pt;
+	background:none;
+	margin-bottom:20px;
+	}
+	
+	h2 { font-size:11pt; }
+	
+	h3 { font-size:10pt; }
+	
+	h4, h5, h6 { font-size:9pt; }
+	
+	hr { background-color: #ccc; }
+		
+	/* Images */
+	img { margin: 1em 1.5em 1.5em 0; }
+	
+	a img { border: none; }
+	
+	/* Links */
+	a:link,
+	a:visited {
+	background: transparent;
+	text-decoration: underline;
+	color:#333;
+	}
+	
+	/* Table */
+	caption { 
+	background: #fff;
+	margin-bottom:2em;
+	text-align:left;
+	}
+	
+	tr { page-break-inside: avoid; } 
+
+
+/* Custom Print Styles
+   ========================================================================== */
    
-   
+	#id {
+	display:none;
+	}
+
+	/* Masthead */
+	#print-masthead {
+	width:100% !important;
+	display:block;
+	text-align:left;
+	height:145px;
+	padding:10px;
+	margin:0;
+	border-bottom:1px solid #c4c4c4;
+	}
+	
+	#print-masthead p {
+	float:right;
+	padding:0 10px 0 0;
+	margin:0 0px 0 0;
+	text-align:right;
+	width:8cm;
+	font-size:8pt;
+	}
+	
+	#print-masthead img {
+	margin:0px 0px 0px 0px;
+	}
+	
+	#content-wrapper {
+	width:100% !important;
+	border:none;
+	background:#FFF;
+	}
+	
+	#content {
+	width:100% !important;
+	margin:0;
+	padding:0;
+	}
+}
    
 
