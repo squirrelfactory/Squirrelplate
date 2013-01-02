@@ -433,6 +433,9 @@ input[type="submit"]{
 	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 	font-size:0.9em;
 	margin:0 0 10px 0;
+	/* IE 7 width fix */
+	width:auto;
+	overflow:visible;
 }
 
 button[type="reset"],
@@ -447,6 +450,9 @@ button[type="submit"]{
 	font-size:0.9em;
 	margin:0 0 10px 0;
 	padding:6px 10px 6px 10px;
+	/* IE 7 width fix */
+	width:auto;
+	overflow:visible;
 }
 
 /* ==========================================================================
@@ -466,6 +472,9 @@ button[type="submit"]{
 	padding:6px 10px 6px 10px;
 	text-align:center;
 	text-decoration:none;
+	/* IE 7 width fix */
+	width:auto;
+	overflow:visible;
 }
 
 /* Specific colours */
@@ -709,34 +718,33 @@ body h1{
    ========================================================================== */
 
 @media print {
-
-	body {
-	width:100% !important;
-	margin:0 !important;
-	padding:0 !important;
-	line-height: 1.4em;
-	font-size:9pt;
-	background:none;
-	color:#444;
+body {
+		width:100% !important;
+		margin:0 !important;
+		padding:0 !important;
+		line-height: 1.4em;
+		font-size:12pt;
+		background:none;
+		color:#444;
 	}
 	
 	/* Headings */
 	h1, h2, h3, h4, h5, h6 { 
-	margin:20px 0 10px 0;
-	color:#000;
+		margin:20px 0 10px 0;
+		color:#000;
 	}
 	
 	h1 { 
-	font-size:13pt;
-	background:none;
-	margin-bottom:20px;
+		font-size:16pt;
+		background:none;
+		margin-bottom:20px;
 	}
 	
-	h2 { font-size:11pt; }
+	h2 { font-size:14pt; }
 	
-	h3 { font-size:10pt; }
+	h3 { font-size:12pt; }
 	
-	h4, h5, h6 { font-size:9pt; }
+	h4, h5, h6 { font-size:12pt; }
 	
 	hr { background-color: #ccc; }
 		
@@ -748,16 +756,16 @@ body h1{
 	/* Links */
 	a:link,
 	a:visited {
-	background: transparent;
-	text-decoration: underline;
-	color:#333;
+		background: transparent;
+		text-decoration: underline;
+		color:#333;
 	}
 	
 	/* Table */
 	caption { 
-	background: #fff;
-	margin-bottom:2em;
-	text-align:left;
+		background: #fff;
+		margin-bottom:2em;
+		text-align:left;
 	}
 	
 	tr { page-break-inside: avoid; } 
