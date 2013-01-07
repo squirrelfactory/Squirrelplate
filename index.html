@@ -37,8 +37,18 @@
 			<h1>Squirrelplate</h1>
 			<p>Designed and built for squirrels and other small clawed creatures by the squirrelfactory</p>
 		</header>
+		
+		
 				
 		<section>
+		
+		<p><label><input type="checkbox" id="agree"> Checkbox input</label></p>
+		<a href="http://yahoo.com"><button type="button" id="continue" disabled="disabled">Button (button)</button></a>
+		<button disabled = "disabled">Click Me!</button>
+		
+		
+	
+		
 			<h2>Sections</h2>
 			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
@@ -357,5 +367,24 @@
 			<p>&copy; 2012 Flamingsquirrel </p>
 			<p>Developed by Squirrelfactory.</p>
 		</footer>
+		
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+        
+        <script>
+		var checked = $('input[type=checkbox]').is(':checked');
+		
+		$(function() {
+			$('#agree').click(function() {
+			
+			var satisfied = $('#agree:checked').val();
+			if (satisfied != undefined) $('#continue').removeAttr('disabled');
+			else $('#continue').attr('disabled', 'disabled');
+			});
+		});
+		
+		</script>
+        
 	</body>
 </html>
