@@ -39,8 +39,7 @@ q:before,q:after { content:""; }
 
 abbr,acronym { border:0; }
 
-/* change the box – model makes the final rendered box the declared width, and any border and padding cut inside the box [http://css-tricks.com/box-sizing/]
-*/
+/* change the box – model makes the final rendered box the declared width, and any border and padding cut inside the box [http://css-tricks.com/box-sizing/] */
 
 * { 
 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -55,13 +54,9 @@ abbr,acronym { border:0; }
    ========================================================================== */
    
 .clearfix:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
-
 .clearfix { display:inline-block;}
-
 /* Hides from IE-mac */
-
 * html .clearfix { height:1%;}
-
 .clearfix { display:block; }
 
 
@@ -71,13 +66,12 @@ abbr,acronym { border:0; }
 
 body {
 	-webkit-text-size-adjust:100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+	-webkit-font-smoothing: antialiased; /* maxvoltar.com/archive/-webkit-font-smoothing */
 	background:#fff;
 	color:#444;
 	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 	font-size:100%;
 } 
-
-
 
 /* Typography, sections and grouping content */
 
@@ -503,13 +497,20 @@ input.btn {
    Site Specific Styles
    ========================================================================== */
 
-body {
+.body {
 	padding:20px 10%;
 }
 
+.body-full{
+	background:#eaeaea;
+	height:400px;
+	
+}
+
+
 header img{
-float:left;
-margin:0 20px 20px 0;
+	float:left;
+	margin:0 20px 20px 0;
 }
 
 header p {

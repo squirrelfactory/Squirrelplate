@@ -2,17 +2,14 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>Fluid Squirrelplate</title>
 		<meta name="author" content="@squirrelfactory">
 		<meta name="description" content="A HTML5 + CSS3 starting point&mdash;designed for squirrels and other small clawed creatures">
 		<meta name="keywords" content="" />
 		<meta name="google-site-verification" content="" />
-		<!-- optimise for mobile view ports -->
-		<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		
-		<!-- styling -->
-		<link rel="stylesheet" type="text/css" href="assets/css/core.css" />
-		
+		<meta name="viewport" content="width=device-width">
+			
 		<!-- icons - inspiration from h5bp and (mathiasbynens.be/notes/touch-icons) -->
 		<!-- for third-generation iPad with high-resolution Retina display: -->
 		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
@@ -25,14 +22,20 @@
   		<!-- Everything else -->
   		<link rel="shortcut icon" href="favicon.ico" />
   		
+  		<!-- styling -->
+		<link rel="stylesheet" type="text/css" href="assets/css/core.css" />
+		
 		<!-- typeography -->
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Copse' rel='stylesheet' type='text/css'>
+		
+		<!-- Modernizer -->
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
 	
 	
 	<body>
-		<header>
+		<header class="body">
 			<img src="assets/images/squirrelfactory/logo.png" alt="logo" width="74" height="74">
 			<h1>Squirrelplate</h1>
 			<p>Designed and built for squirrels and other small clawed creatures by the squirrelfactory</p>
@@ -40,15 +43,7 @@
 		
 		
 				
-		<section>
-		
-		<p><label><input type="checkbox" id="agree"> Checkbox input</label></p>
-		<a href="http://yahoo.com"><button type="button" id="continue" disabled="disabled">Button (button)</button></a>
-		<button disabled = "disabled">Click Me!</button>
-		
-		
-	
-		
+		<section class="body">		
 			<h2>Sections</h2>
 			<h1>Heading 1</h1>
 			<h2>Heading 2</h2>
@@ -63,7 +58,12 @@
 			</address>
 		</section>
 		
-		<section>
+		<!--<section class="body-full">
+		
+		banner
+		</section>-->
+		
+		<section class="body">
 			<h2>Grouping Content</h2>
 			<h3>Paragraph</h3> 
 			<p>Squirrels belong to a large family of small or medium-sized rodents called the Sciuridae. The family includes tree squirrels, ground squirrels, chipmunks, marmots (including woodchucks), flying squirrels, and prairie dogs. Squirrels are indigenous to the Americas, Eurasia, and Africa and have been introduced to Australia. Squirrels are first attested in the Eocene, about 40 million years ago, and are most closely related to the mountain beaver and to the dormice among living species.</p>
@@ -132,7 +132,7 @@
 	
 		
 	
-		<section>
+		<section class="body">
 			<h2>Text-level semantics</h2>  	
 			<p>
 				The <a href="http:www.flamingsquirrel.co.uk">a element</a> element<br>
@@ -162,7 +162,7 @@
 		</section>
 	
 		
-		<section>
+		<section class="body">
 			<h2>Embedded content</h2>
 			<h3>The img element</h3>
 			<img src="assets/images/core/tmp.png">
@@ -187,7 +187,7 @@
 		</section>
 	
 		
-		<section>
+		<section class="body">
 			<h2>Tabular data</h2>
 			<table>
 				<caption>Jimi Hendrix - albums</caption>
@@ -231,7 +231,7 @@
 		</section>
 	
 		
-		<section>
+		<section class="body">
 			<h2>Forms</h2>
 			<form>
 				<fieldset>
@@ -266,7 +266,7 @@
 			</form>
 		</section>
 		
-		<section>
+		<section class="body">
 			<h2>Grids</h2>
 			
 			<h3>Image Grid</h3>
@@ -355,7 +355,7 @@
 		</section>
 
 
-		<section>
+		<section class="body">
 			<h2>Useful Resources</h2>
 			<p><a href="http://www.w3.org/TR/CSS2/selector.html">html selectors</a><br>
 			<a href="http://www.w3.org/TR/html5/">HTML5 draft spec</a><br>
@@ -363,28 +363,22 @@
 		</section>
 
 
-		<footer>
+		<footer class="body">
 			<p>&copy; 2012 Flamingsquirrel </p>
 			<p>Developed by Squirrelfactory.</p>
 		</footer>
 		
-		
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
-        
+        <!--<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>-->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-		var checked = $('input[type=checkbox]').is(':checked');
-		
-		$(function() {
-			$('#agree').click(function() {
-			
-			var satisfied = $('#agree:checked').val();
-			if (satisfied != undefined) $('#continue').removeAttr('disabled');
-			else $('#continue').attr('disabled', 'disabled');
-			});
-		});
-		
-		</script>
-        
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>        
 	</body>
 </html>
