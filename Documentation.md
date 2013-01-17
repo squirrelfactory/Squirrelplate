@@ -24,3 +24,15 @@ A vast majority of sites these days make use of the jQuery JavaScript library. A
 
 * Google Analytics
 This is simply an optimised version of Google’s asynchronous tracking snippet
+
+
+
+
+
+
+
+
+Useful Resources
+html selectors - http://www.w3.org/TR/CSS2/selector.html  
+HTML5 draft spec - http://www.w3.org/TR/html5/ 
+Responsive design patterns - http://bradfrost.github.com/this-is-responsive/patterns.html

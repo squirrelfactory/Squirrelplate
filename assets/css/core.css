@@ -3,8 +3,6 @@
   Handcrafted by : @squirrelfactory
   ================================================
   Contents:
-  	01 Global Reset
-    01 Sensible defaults
 
   ================================================
   */
@@ -14,10 +12,9 @@
    Debugging
    ========================================================================== */
 
-* {
-	/* outline: 1px dotted red; */
-}
-
+/** {
+	outline: 1px dotted red; 
+}*/
 
 /* ==========================================================================
    Global Reset
@@ -66,10 +63,11 @@ abbr,acronym { border:0; }
 
 body {
 	-webkit-text-size-adjust:100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-	-webkit-font-smoothing: antialiased; /* maxvoltar.com/archive/-webkit-font-smoothing */
+	-ms-text-size-adjust:100%; /* Stops Mobile IE from auto-adjusting font-sizes */
+	/*-webkit-font-smoothing: antialiased; /* maxvoltar.com/archive/-webkit-font-smoothing */
 	background:#fff;
 	color:#444;
-	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size:100%;
 } 
 
@@ -95,7 +93,7 @@ body {
 h1,h2,h3,h4,h5,h6 {
 	margin:16px 0 16px;
 	color:#444;
-	font-family:"Helvetica Neue", sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight:bold;
 	line-height:1em;
 }
@@ -270,7 +268,7 @@ a[href^=tel]{
    ========================================================================== */
    
 img {
-	margin:0 0 0 0;
+	margin:0;
 	max-width:100%; /* Only comes into play on responsive sites */
 }
 
@@ -388,11 +386,7 @@ textarea {
 }
 
 input[type="search"]{
-<<<<<<< HEAD
-	padding:10px;
-=======
 	padding:5px;
->>>>>>> 3de2aa47fe9d99dbe6d2090ef0e8b3df5bf5030b
 }
 
 input[ type="color" ]{
@@ -417,7 +411,6 @@ input[ type="range" ]{
 input[type="reset"],
 input[type="button"],
 input[type="submit"]{
-	-webkit-appearance:none; /* Removes webkit styling */
 	background:#000;
 	border:none;
 	border-radius:4px;
@@ -427,26 +420,28 @@ input[type="submit"]{
 	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 	font-size:0.9em;
 	margin:0 0 10px 0;
-	/* IE 7 width fix */
 	width:auto;
-	overflow:visible;
+	overflow:visible; /* IE 7 width fix */
+	-webkit-appearance:none; /* Removes webkit styling */
+	-moz-appearance:none; /* Removes webkit styling */
 }
 
 button[type="reset"],
 button[type="button"],
 button[type="submit"]{
-	background:#6c5454;
+	background:#000;
 	border:none;
 	border-radius:4px;
 	color:#fff;
 	cursor:pointer;
+	padding:6px 10px 6px 10px;
 	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 	font-size:0.9em;
 	margin:0 0 10px 0;
-	padding:6px 10px 6px 10px;
-	/* IE 7 width fix */
 	width:auto;
-	overflow:visible;
+	overflow:visible; /* IE 7 width fix */
+	-webkit-appearance:none; /* Removes webkit styling */
+	-moz-appearance:none; /* Removes webkit styling */
 }
 
 /* ==========================================================================
@@ -493,47 +488,7 @@ input.btn {
 
 
 
-/* ==========================================================================
-   Site Specific Styles
-   ========================================================================== */
 
-.body {
-	padding:20px 10%;
-}
-
-.body-full{
-	background:#eaeaea;
-	height:400px;
-	
-}
-
-
-header img{
-	float:left;
-	margin:0 20px 20px 0;
-}
-
-header p {
-	clear:left;
-}
-
-
-/* Style the first h2 tag */
-section h2:first-child {
-	border-top:1px dotted #979797;
-	border-bottom:1px dotted #979797;
-	text-transform: uppercase;
-	font-size:1.2em;
-	padding:13px 0;
-	border-radius:3px;
-	color:#000;
-	margin:0 0 30px 0;
-}
-
-body h1{
-	font-size:2em;
-	padding-top:20px;
-}
 
 
 /* ==========================================================================
@@ -712,7 +667,45 @@ body h1{
 	}
 }
   
-   
+
+/* ==========================================================================
+   Site Specific Styles
+   ========================================================================== */
+
+.body {
+	padding:20px 10%;
+}
+
+.body-full{
+	background:#eaeaea;
+}
+
+header img{
+	float:left;
+	margin:0 20px 20px 0;
+}
+
+
+/* Style the first h2 tag */
+section h2:first-child {
+	border-top:1px dotted #979797;
+	border-bottom:1px dotted #979797;
+	text-transform: uppercase;
+	font-size:1.2em;
+	padding:13px 0;
+	border-radius:3px;
+	color:#000;
+	margin:0 0 30px 0;
+}
+
+body h1{
+	font-size:2em;
+	padding-top:20px;
+}
+
+
+
+
    
 /* ==========================================================================
    Print Stylesheet
