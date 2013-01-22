@@ -6,7 +6,9 @@
    * Global Reset
    * Clearfix Hack
    * Default styles
-   
+   * Grids
+   * Site Specific Styles
+   * Print Stylesheet
 */
 
 
@@ -43,7 +45,6 @@ abbr,acronym { border:0; }
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	box-sizing: border-box; /* Opera/IE 8+ */
 }
-
 
 
 /* ==========================================================================
@@ -94,8 +95,6 @@ h1,h2,h3,h4,h5,h6 {
 	margin:16px 0 16px;
 	color:#444;
 	font-family: 'Open Sans', sans-serif;
-	font-weight:bold;
-	line-height:1em;
 }
 
 h1 { font-size:1.4375em; }
@@ -410,83 +409,35 @@ input[ type="range" ]{
 
 input[type="reset"],
 input[type="button"],
-input[type="submit"]{
-	background:#000;
-	border:none;
-	border-radius:4px;
-	color:#fff;
-	cursor:pointer;
-	padding:6px 10px 6px 10px;
-	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
-	font-size:0.9em;
-	margin:0 0 10px 0;
-	width:auto;
-	overflow:visible; /* IE 7 width fix */
-	-webkit-appearance:none; /* Removes webkit styling */
-	-moz-appearance:none; /* Removes webkit styling */
-}
-
+input[type="submit"],
 button[type="reset"],
 button[type="button"],
-button[type="submit"]{
+button[type="submit"],
+.btn{
 	background:#000;
 	border:none;
 	border-radius:4px;
 	color:#fff;
 	cursor:pointer;
 	padding:6px 10px 6px 10px;
-	font-family:"Helvetica Neue", Helvetica, "Lucida Grande", sans-serif;
 	font-size:0.9em;
 	margin:0 0 10px 0;
 	width:auto;
 	overflow:visible; /* IE 7 width fix */
 	-webkit-appearance:none; /* Removes webkit styling */
 	-moz-appearance:none; /* Removes webkit styling */
+	display:inline-block;	
 }
 
-/* ==========================================================================
-   Default Styles
-   ========================================================================== */
-
-/* Standard button class */
-
-.btn {
-	-webkit-appearance:none; /* Removes webkit styling */
-	border:none;
-	border-radius:4px;
-	cursor:pointer;
-	display:block;
-	font-weight:bold;
-	overflow:auto;
-	padding:6px 10px 6px 10px;
-	text-align:center;
-	text-decoration:none;
-	/* IE 7 width fix */
-	width:auto;
-	overflow:visible;
+input[type="reset"]:hover, 
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover,
+button[type="submit"]:hover,
+.btn:hover { 
+	background:#444;
 }
-
-/* Specific colours */
-
-.btn-black {
-	background:black;
-	color:#fff !important;
-	text-shadow:#000 1px 1px 0;
-}
-
-.btn-black:hover { background:#000; }
-
-.btn-submit {
-	float:right;
-	font-size:1.2em;
-}
-
-/* Reduce font size on input buttons */
-input.btn {
-	font-size:1em !important;
-} 
-
-
 
 
 

@@ -23,7 +23,7 @@ A vast majority of sites these days make use of the jQuery JavaScript library. A
 
 
 * Google Analytics
-This is simply an optimised version of Google’s asynchronous tracking snippet
+This is simply an optimised version of Google’s asynchronous tracking snippet. Always at teh bottom of each page
 
 
 
