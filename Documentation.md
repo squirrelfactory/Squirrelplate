@@ -1,10 +1,10 @@
-DOCUMENTATION
-=================================================================================================================
+#DOCUMENTATION
 
 
 
-HTML
-=================================================================================================================
+
+##HTML
+
 
 
 * X-UA-Compatible
@@ -32,7 +32,7 @@ This is simply an optimised version of Google’s asynchronous tracking snippet.
 
 
 
-Useful Resources
+##Useful Resources
 html selectors - http://www.w3.org/TR/CSS2/selector.html  
 HTML5 draft spec - http://www.w3.org/TR/html5/ 
 Responsive design patterns - http://bradfrost.github.com/this-is-responsive/patterns.html
