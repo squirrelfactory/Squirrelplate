@@ -34,227 +34,238 @@
 			<h1>Squirrelplate</h1>
 		</header>
 	
-		<section class="body-full">
+		<!---<section class="body-full">
 			<div class="body">
 				<p>Responsive platform designed and built for squirrels and other small clawed creatures by @squirrelfactory</p>
 			</div>
+		</section>--->
+		
+		<section class="body-full">
+			<section class="body">		
+				<h1>Sections</h1>
+				<h1>Heading 1</h1>
+				<h2>Heading 2</h2>
+				<h3>Heading 3</h3>
+				<h4>Heading 4</h4>
+				<h5>Heading 5</h5>
+				<h6>Heading 6</h6>
+				<address>
+					Address Line 1<br>
+					Address Line 2<br>
+					Address Line 3
+				</address>
+			</section>
 		</section>
 		
-		<section class="body">		
-			<h2>Sections</h2>
-			<h1>Heading 1</h1>
-			<h2>Heading 2</h2>
-			<h3>Heading 3</h3>
-			<h4>Heading 4</h4>
-			<h5>Heading 5</h5>
-			<h6>Heading 6</h6>
-			<address>
-				Address Line 1<br>
-				Address Line 2<br>
-				Address Line 3
-			</address>
-		</section>
+		<section class="body-full">
+			<section class="body">
+				<h2>Grouping Content</h2>
+				<h3>Paragraph</h3> 
+				<p>Squirrels belong to a large family of small or medium-sized rodents called the Sciuridae. The family includes tree squirrels, ground squirrels, chipmunks, marmots (including woodchucks), flying squirrels, and prairie dogs. Squirrels are indigenous to the Americas, Eurasia, and Africa and have been introduced to Australia. Squirrels are first attested in the Eocene, about 40 million years ago, and are most closely related to the mountain beaver and to the dormice among living species.</p>
 		
-		<section class="body">
-			<h2>Grouping Content</h2>
-			<h3>Paragraph</h3> 
-			<p>Squirrels belong to a large family of small or medium-sized rodents called the Sciuridae. The family includes tree squirrels, ground squirrels, chipmunks, marmots (including woodchucks), flying squirrels, and prairie dogs. Squirrels are indigenous to the Americas, Eurasia, and Africa and have been introduced to Australia. Squirrels are first attested in the Eocene, about 40 million years ago, and are most closely related to the mountain beaver and to the dormice among living species.</p>
-	
-			<h3>The hr element</h3>  	
-			
-			<hr />
-	
-			<h3>The pre element</h3>  
-			<pre>
+				<h3>The hr element</h3>  	
+				
+				<hr />
+		
+				<h3>The pre element</h3>  
+				<pre>
+					<ol>
+						<li>function Panel(element, canClose, closeHandler) {
+						<li>this.element = element;
+						<li>this.canClose = canClose;
+						<li>this.closeHandler = function () { if (closeHandler) closeHandler() };
+						<li>}
+					</ol>
+				</pre>
+		
+				<h3>The blockquote element : represents a section that is quoted from another source.</h3>
+		
+				<blockquote>
+					<p>The truth may be puzzling. It may take some work to grapple with.
+					It may be counterintuitive. It may contradict deeply held
+					prejudices. It may not be consonant with what we desperately want to
+					be true. But our preferences do not determine what's true. We have a
+					method, and that method helps us to reach not absolute truth, only
+					asymptotic approaches to the truth — never there, just closer
+					and closer, always finding vast new oceans of undiscovered
+					possibilities. Cleverly designed experiments are the key.
+					</p>
+				</blockquote>
+		
+				<h3>The ol element</h3>
 				<ol>
-					<li>function Panel(element, canClose, closeHandler) {
-					<li>this.element = element;
-					<li>this.canClose = canClose;
-					<li>this.closeHandler = function () { if (closeHandler) closeHandler() };
-					<li>}
+					<li>Red Squirrel
+					<li>Grey Squirrel
+					<li>Black Squirrel
 				</ol>
-			</pre>
-	
-			<h3>The blockquote element : represents a section that is quoted from another source.</h3>
-	
-			<blockquote>
-				<p>The truth may be puzzling. It may take some work to grapple with.
-				It may be counterintuitive. It may contradict deeply held
-				prejudices. It may not be consonant with what we desperately want to
-				be true. But our preferences do not determine what's true. We have a
-				method, and that method helps us to reach not absolute truth, only
-				asymptotic approaches to the truth — never there, just closer
-				and closer, always finding vast new oceans of undiscovered
-				possibilities. Cleverly designed experiments are the key.
+		
+				<h3>The ul element</h3>
+				<ul>
+					<li>Norway
+					<li>Switzerland
+					<li>United Kingdom
+					<li>United States
+				</ul>
+		
+				<h3>The dl element</h3>
+				<dl>
+					<dt> Last modified time </dt>
+					<dd> 2004-12-23T23:33Z </dd>
+					<dt> Recommended update interval </dt>
+					<dd> 60s </dd>
+					<dt> Authors </dt>
+					<dt> Editors </dt>
+					<dd> Robert Rothman </dd>
+					<dd> Daniel Jackson </dd>
+				</dl>
+		
+				<h3>The figure element with optional caption</h3>
+				<figure>
+					<img src="assets/images/core/tmp.png">
+					<figcaption>Figcaption content</figcaption>
+				</figure>
+			</section>
+		</section>
+		
+		<section class="body-full">
+			<section class="body">
+				<h2>Text-level semantics</h2>  	
+				<p>
+					The <a href="http:www.squirrelfactory.co.uk">a element</a> element<br>
+					The <a href="http:www.squirrelfactory.co.uk" class="btn">a element</a> element<br>
+					The <em>em element</em>&mdash; stress emphasis<br>
+					The <strong>strong element</strong>&mdash;strong importance<br>
+					The <small>small element</small><br>
+					The <s>s element</s>&mdash;no longer accurate<br>
+					The <cite>cite element</cite><br>
+					The <q>q element</q>&mdash;phrasing content quoted from another source.<br>
+					The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn>&mdash;defining instance of a term<br>
+					The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr><br>
+					The <time datetime="2007-10-05">time</time> element<br>
+					The <code>code element</code><br>
+					The <var>var element</var><br>
+					The <samp>samp element</samp><br>
+					The <kbd>kbd element</kbd> example<br>
+					The <sub>sub element</sub> example<br>
+					The <sup>sup element</sup> example<br>
+					The <i>i element</i> element&mdash; alternate voice or mood<br>
+					The <b>b element</b>&mdash; highlight key words without marking them up as important<br>
+					The <u>u element</u><br>
+					The <mark>mark element</mark><br>
+					The <span>span element</span><br>
+					The <ins>ins element</ins><br>
+					The <del>del element</del>
 				</p>
-			</blockquote>
-	
-			<h3>The ol element</h3>
-			<ol>
-				<li>Red Squirrel
-				<li>Grey Squirrel
-				<li>Black Squirrel
-			</ol>
-	
-			<h3>The ul element</h3>
-			<ul>
-				<li>Norway
-				<li>Switzerland
-				<li>United Kingdom
-				<li>United States
-			</ul>
-	
-			<h3>The dl element</h3>
-			<dl>
-				<dt> Last modified time </dt>
-				<dd> 2004-12-23T23:33Z </dd>
-				<dt> Recommended update interval </dt>
-				<dd> 60s </dd>
-				<dt> Authors </dt>
-				<dt> Editors </dt>
-				<dd> Robert Rothman </dd>
-				<dd> Daniel Jackson </dd>
-			</dl>
-	
-			<h3>The figure element with optional caption</h3>
-			<figure>
+			</section>
+		</section>
+		
+		<section class="body-full">
+			<section class="body">
+				<h2>Embedded content</h2>
+				<h3>The img element</h3>
 				<img src="assets/images/core/tmp.png">
-				<figcaption>Figcaption content</figcaption>
-			</figure>
-		</section>
-	
-		<section class="body">
-			<h2>Text-level semantics</h2>  	
-			<p>
-				The <a href="http:www.squirrelfactory.co.uk">a element</a> element<br>
-				The <a href="http:www.squirrelfactory.co.uk" class="btn">a element</a> element<br>
-				The <em>em element</em>&mdash; stress emphasis<br>
-				The <strong>strong element</strong>&mdash;strong importance<br>
-				The <small>small element</small><br>
-				The <s>s element</s>&mdash;no longer accurate<br>
-				The <cite>cite element</cite><br>
-				The <q>q element</q>&mdash;phrasing content quoted from another source.<br>
-				The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn>&mdash;defining instance of a term<br>
-				The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr><br>
-				The <time datetime="2007-10-05">time</time> element<br>
-				The <code>code element</code><br>
-				The <var>var element</var><br>
-				The <samp>samp element</samp><br>
-				The <kbd>kbd element</kbd> example<br>
-				The <sub>sub element</sub> example<br>
-				The <sup>sup element</sup> example<br>
-				The <i>i element</i> element&mdash; alternate voice or mood<br>
-				The <b>b element</b>&mdash; highlight key words without marking them up as important<br>
-				The <u>u element</u><br>
-				The <mark>mark element</mark><br>
-				The <span>span element</span><br>
-				The <ins>ins element</ins><br>
-				The <del>del element</del>
-			</p>
-		</section>
 		
-		<section class="body">
-			<h2>Embedded content</h2>
-			<h3>The img element</h3>
-			<img src="assets/images/core/tmp.png">
-	
-			<h3 class="squirrel">The iframe element</h3>
-			<iframe>Content</iframe>
-	
-			<h3 class="squirrel">video</h3>
-			<video src="" autoplay controls onerror="failed(event)"></video>
-	
-			<h3 class="squirrel">audio</h3>
-			<audio controls></audio>
-			<audio></audio>
-	
-			<h3 class="squirrel">The Canvas Element</h3>
-			<canvas></canvas>
-	
-			<h3 class="squirrel">svg</h3>
-			<svg width="100px" height="100px">
-			<circle cx="100" cy="100" r="100" fill="#ff0000" />
-			</svg>
+				<h3 class="squirrel">The iframe element</h3>
+				<iframe>Content</iframe>
+		
+				<h3 class="squirrel">video</h3>
+				<video src="" autoplay controls onerror="failed(event)"></video>
+		
+				<h3 class="squirrel">audio</h3>
+				<audio controls></audio>
+				<audio></audio>
+		
+				<h3 class="squirrel">The Canvas Element</h3>
+				<canvas></canvas>
+		
+				<h3 class="squirrel">svg</h3>
+				<svg width="100px" height="100px">
+				<circle cx="100" cy="100" r="100" fill="#ff0000" />
+				</svg>
+			</section>
 		</section>
 	
 		
-		<section class="body">
-			<h2>Tabular data</h2>
-			<table>
-				<caption>Jimi Hendrix - albums</caption>
-				<thead>
-					<tr>
-						<th>Album</th>
-						<th>Year</th>
-						<th>Price</th>
-					</tr>
-				</thead>
-				<tfoot>
-					<tr>
-						<th>Album</th>
-						<th>Year</th>
-						<th>Price</th>
-					</tr>
-				</tfoot>
-				<tbody>
-					<tr>
-						<td>Are You Experienced</td>
-						<td>1967</td>
-						<td>$10.00</td>
-					</tr>
-					<tr>
-						<td>Axis: Bold as Love</td>
-						<td>1967</td>
-						<td>$12.00</td>
-					</tr>
-					<tr>
-						<td>Electric Ladyland</td>
-						<td>1968</td>
-						<td>$10.00</td>
-					</tr>
-					<tr>
-						<td>Band of Gypsys</td>
-						<td>1970</td>
-						<td>$12.00</td>
-					</tr>
-				</tbody>
-			</table>
+		<section class="body-full">
+			<section class="body">
+				<h2>Tabular data</h2>
+				<table>
+					<caption>Jimi Hendrix - albums</caption>
+					<thead>
+						<tr>
+							<th>Album</th>
+							<th>Year</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tfoot>
+						<tr>
+							<th>Album</th>
+							<th>Year</th>
+							<th>Price</th>
+						</tr>
+					</tfoot>
+					<tbody>
+						<tr>
+							<td>Are You Experienced</td>
+							<td>1967</td>
+							<td>$10.00</td>
+						</tr>
+						<tr>
+							<td>Axis: Bold as Love</td>
+							<td>1967</td>
+							<td>$12.00</td>
+						</tr>
+						<tr>
+							<td>Electric Ladyland</td>
+							<td>1968</td>
+							<td>$10.00</td>
+						</tr>
+						<tr>
+							<td>Band of Gypsys</td>
+							<td>1970</td>
+							<td>$12.00</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
 		</section>
 	
-		
-		<section class="body">
-			<h2>Forms</h2>
-			<form>
-				<fieldset>
-					<legend>Inputs as descendents of labels (form legend)</legend>
-					<p><label>Text input <input type="text" value="default value that goes on and on without stopping or punctuation"></label></p>
-					<p><label>Search input <input type="search"></label></p>
-					<p><label>Telephone input <input type="tel"></label></p>
-					<p><label>URL input <input type="url" placeholder="http://"></label></p>
-					<p><label>Email input <input type="email"></label></p>
-					<p><label>Password input <input type="password" value="password"></label></p>
-					<p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p>
-					<p><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></p>
-					<p><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></p>
-					<p><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></p>
-					<p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p>
-					<p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
-					<p><label for="ir">Range input</label> <input type="range" id="ir" value="10"></p>
-					<p><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></p>
-					<p><label><input type="radio" name="rad"> Radio input</label></p>
-					<p><label><input type="checkbox"> Checkbox input</label></p>
-					<p><label>File input <input type="file"></label></p>
-					<p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
-					<p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
-					<!--<p><input type="image" src="assets/images/core/tmp.png" alt="Image (input)"></p>-->
-					<p><input type="reset" value="Reset (input)"></p>
-					<p><input type="button" value="Button (input)"></p>
-					<p><input type="submit" value="Submit (input)"></p>
-					<p><button type="reset">Reset (button)</button></p>
-					<p><button type="button">Button (button)</button></p>
-					<p><button type="submit">Submit (button)</button></p>
-				</fieldset>
-			</form>
+			<section class="body-full">
+			<section class="body">
+				<h2>Forms</h2>
+				<form>
+					<fieldset>
+						<legend>Inputs as descendents of labels (form legend)</legend>
+						<p><label>Text input <input type="text" value="default value that goes on and on without stopping or punctuation"></label></p>
+						<p><label>Search input <input type="search"></label></p>
+						<p><label>Telephone input <input type="tel"></label></p>
+						<p><label>URL input <input type="url" placeholder="http://"></label></p>
+						<p><label>Email input <input type="email"></label></p>
+						<p><label>Password input <input type="password" value="password"></label></p>
+						<p><label for="idt">Datetime input</label> <input type="datetime" id="idt" value="1970-01-01T00:00:00Z"></p>
+						<p><label for="idd">Date input</label> <input type="date" id="idd" value="1970-01-01"></p>
+						<p><label for="idm">Month input</label> <input type="month" id="idm" value="1970-01"></p>
+						<p><label for="idw">Week input</label> <input type="week" id="idw" value="1970-W01"></p>
+						<p><label for="idtl">Datetime-local input</label> <input type="datetime-local" id="idtl" value="1970-01-01T00:00"></p>
+						<p><label for="in">Number input</label> <input type="number" id="in" min="0" max="10" value="5"></p>
+						<p><label for="ir">Range input</label> <input type="range" id="ir" value="10"></p>
+						<p><label for="ic">Color input</label> <input type="color" id="ic" value="#000000"></p>
+						<p><label><input type="radio" name="rad"> Radio input</label></p>
+						<p><label><input type="checkbox"> Checkbox input</label></p>
+						<p><label>File input <input type="file"></label></p>
+						<p><label>Select field <select><option>Option 01</option><option>Option 02</option></select></label></p>
+						<p><label>Textarea <textarea cols="30" rows="5" >Textarea text</textarea></label></p>
+						<!--<p><input type="image" src="assets/images/core/tmp.png" alt="Image (input)"></p>-->
+						<p><input type="reset" value="Reset (input)"></p>
+						<p><input type="button" value="Button (input)"></p>
+						<p><input type="submit" value="Submit (input)"></p>
+						<p><button type="reset">Reset (button)</button></p>
+						<p><button type="button">Button (button)</button></p>
+						<p><button type="submit">Submit (button)</button></p>
+					</fieldset>
+				</form>
+			</section>
 		</section>
 		
 		<section class="body">
