@@ -8,8 +8,7 @@
 
 
 * X-UA-Compatible
-Internet Explorer has many rendering engines ready for use. What this line of code basically does is force IE to use the most up to date rendering engine that it has available, so that your pages will render as well as possible. It then goes on to talk about Chrome Frame. Chrome Frame is a plugin for IE6, 7, and 8 which brings all the rendering, and js power of Google Chrome to IE. If the user has it installed, we render our site using it. For more information on Chrome Frame, and how you can even prompt users without it to install it, check here.
-
+Internet Explorer has many rendering engines ready for use. What this line of code basically does is force IE to use the most up to date rendering engine that it has available, so that your pages will render as well as possible. It then goes on to talk about Chrome Frame. Chrome Frame is a plugin for IE6, 7, and 8 which brings all the rendering, and js power of Google Chrome to IE. If the user has it installed, we render our site using it.
 
 * google-site-verification
 provides webmaster tools with verification of site ownership

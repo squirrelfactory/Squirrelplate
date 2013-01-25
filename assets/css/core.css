@@ -441,6 +441,29 @@ button[type="submit"]:hover,
 }
 
 
+/*.button {
+  -webkit-border-radius: 1.563em;
+  -moz-border-radius: 1.563em;
+  border-radius: 1.563em;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  display: block;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  line-height: 2.083em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  background:#444;
+}
+
+.button:hover {
+	background:red;
+}*/
+
 
 
 /* ==========================================================================
