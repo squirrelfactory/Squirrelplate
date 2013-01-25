@@ -1,6 +1,6 @@
 #DOCUMENTATION
 
-
+Squirrelplate is a very simple starting point for building reponsive web documents and applications. Its work in progress so expect issues.
 
 
 ##HTML
