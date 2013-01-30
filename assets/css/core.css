@@ -48,14 +48,22 @@ abbr,acronym { border:0; }
 
 
 /* ==========================================================================
-   Clearfix
+   Group - clears floated elements [http://css-tricks.com/snippets/css/clear-fix/]
    ========================================================================== */
    
-.clearfix:after { clear:both; content:"."; display:block; height:0; visibility:hidden; }
-.clearfix { display:inline-block;}
-/* Hides from IE-mac */
-* html .clearfix { height:1%;}
-.clearfix { display:block; }
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
 
 
 /* ==========================================================================
