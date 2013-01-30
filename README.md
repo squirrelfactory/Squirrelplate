@@ -1,6 +1,6 @@
 #DOCUMENTATION
 
-Squirrelplate is a very simple starting point for building reponsive web documents and applications. Its work in progress so expect issues.
+Squirrelplate is a very simple starting point for building reponsive web documents and applications. It's very much work in progress so expect issues.
 
 
 ##HTML
@@ -20,7 +20,8 @@ first- and second-generation iPad: apple-touch-icon-72x72-precomposed.png or app
 non-Retina iPhone and iPod Touch: apple-touch-icon-57x57-precomposed.png or apple-touch-icon-57x57.png
 fallback for everything else (possibly including non-Apple devices): apple-touch-icon-precomposed.png and apple-touch-icon.png
 
-
+* Respond.js [https://github.com/scottjehl/Respond]
+Allow support for media queries in IE6-IE8 
 
 * Modernizer [http://modernizr.com/]
 
