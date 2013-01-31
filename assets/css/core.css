@@ -80,6 +80,15 @@ body {
 	font-size:100%;
 } 
 
+
+@media all and (min-width: 960px) {
+	body {
+		font-size:115%;
+	}
+
+}
+
+
 /* Typography, sections and grouping content */
 
 /* Em Measurements divide target by 16
@@ -97,6 +106,9 @@ body {
 21 = 1.3125em
 22 = 1.375em
 23 = 1.4375em
+24 = 1.5em
+25 = 1.5625em
+26 = 1.625
 ----------------------------------------------------------------------------------------------------------------------- */
 
 h1,h2,h3,h4,h5,h6 {
@@ -117,12 +129,12 @@ h6 { font-size:1.0625em; }
 p, address, caption {
 	font-size:0.875em;
 	font-weight:normal;
-	line-height:1.6em;
+	line-height:1.625em;
 	margin:0 0 25px 0;
 }
 
 hr {
-	margin:20px 0 40px 0;
+	margin:1.25em 0 2.5em 0;
 	border:none;
 	clear:both;
 	color:#d9d9d9;
@@ -135,7 +147,7 @@ pre {
 	background:#fff;
 	border:1px dotted #c3c3c3;
 	border-radius:4px;
-	font-size:1.1em;
+	font-size:1.0625em;
 	margin-bottom:25px;
 	overflow-y:hidden;
 	padding:25px 15px 15px 25px;
@@ -220,6 +232,10 @@ a,
 a:visited {
 	color:#c80303;
 	text-decoration:none;
+}
+
+a:hover {
+	color:red;	
 }
 
 em { }
@@ -435,7 +451,15 @@ button[type="submit"],
 	overflow:visible; /* IE 7 width fix */
 	-webkit-appearance:none; /* Removes webkit styling */
 	-moz-appearance:none; /* Removes webkit styling */
-	display:inline-block;	
+	display:inline-block;
+	letter-spacing: 0.1em;
+	text-align: center;
+	
+	-moz-transition: all 0.2s linear;
+	-ms-transition: all 0.2s linear;
+	-o-transition: all 0.2s linear;
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
 }
 
 input[type="reset"]:hover, 
@@ -445,32 +469,13 @@ button[type="reset"]:hover,
 button[type="button"]:hover,
 button[type="submit"]:hover,
 .btn:hover { 
-	background:#444;
-}
-
-
-/*.button {
-  -webkit-border-radius: 1.563em;
-  -moz-border-radius: 1.563em;
-  border-radius: 1.563em;
-  -moz-transition: all 0.2s linear;
-  -ms-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  display: block;
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
-  line-height: 2.083em;
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  background:#444;
+	background:red;
+	color:#FFF;
 }
 
 .button:hover {
 	background:red;
-}*/
+}
 
 
 
@@ -655,7 +660,7 @@ button[type="submit"]:hover,
    Site Specific Styles
    ========================================================================== */
 header {
-		border-bottom:2px solid #efefef;
+	border-bottom:2px solid #efefef;
 }
 
 header img{
