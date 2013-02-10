@@ -35,7 +35,24 @@ This is simply an optimised version of Google’s asynchronous tracking snippet.
 
 
 
+##BUILD PROCESS - Notes regarding build process
 
+* Set-up local devlopment environment
+* Set-up client preview development environment
+* Test live server capabilities if using third party hosting
+
+* Favicon
+* Touch Icon
+* Analytics
+* Page Titles
+* Page Descriptions
+* Font linking
+* Sitemap.xml
+* Robots.txt
+* Webmaster Tools
+* 404 page
+* humans.txt
+* robots.txt
 
 
 
