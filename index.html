@@ -37,6 +37,26 @@
 			<h1>Squirrelplate</h1>
 		</header>
 		
+		<section class="body-full">
+			<section class="body">
+
+		<a href="#menu" class="menu-link">&#9776;</a>
+		<nav id="menu" role="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Products</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+
+
+	</section>
+		</section>
+		
+
+		
 		<section class="body-full body-alternate">
 			<section class="body">		
 				<h1>Sections</h1>
@@ -365,6 +385,21 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.5.min.js"><\/script>')</script>
         <!--<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>-->
+        
+		<script>	
+		$(document).ready(function() {
+			$('body').addClass('js');
+			var $menu = $('#menu'),
+			$menulink = $('.menu-link');
+			  
+			$menulink.click(function() {
+				$menulink.toggleClass('active');
+				$menu.toggleClass('active');
+				return false;
+			});
+		});
+		</script>
+		
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
