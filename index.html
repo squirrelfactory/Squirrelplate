@@ -25,6 +25,7 @@
 		
 		<!-- Respond.js-->
 		<script src="assets/js/vendor/respond.min.js"></script>
+		<script src="assets/js/vendor/rainbow.min.js"></script>
 		
 		<!-- Modernizer -->
 		<script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -40,17 +41,19 @@
 		<section class="body-full">
 			<section class="body">
 
-		<a href="#menu" class="menu-link">&#9776;</a>
+
+		<a href="#menu" class="menu-link"><i class="icon-menu"></i></a>
 		<nav id="menu" role="navigation">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Products</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="##">Services</a></li>
+				<li><a href="##">About</a></li>
 			</ul>
 		</nav>
 
+<i class="icon-facebook-circled"></i>
 
 	</section>
 		</section>
@@ -86,15 +89,13 @@
 				<hr />
 		
 				<h3>The pre element</h3>  
-				<pre>
-					<ol>
-						<li>function Panel(element, canClose, closeHandler) {
-						<li>this.element = element;
-						<li>this.canClose = canClose;
-						<li>this.closeHandler = function () { if (closeHandler) closeHandler() };
-						<li>}
-					</ol>
-				</pre>
+				<pre><code data-language="javascript">function Panel(element, canClose, closeHandler) {
+    this.element = element;
+    this.canClose = canClose;
+    this.closeHandler = function () { if (closeHandler) closeHandler() };
+}</code></pre>
+				
+				<pre><code data-language="javascript">var testing = true;</code></pre>
 		
 				<h3>The blockquote element : represents a section that is quoted from another source.</h3>
 		
