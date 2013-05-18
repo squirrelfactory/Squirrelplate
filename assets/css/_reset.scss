@@ -1,0 +1,46 @@
+// Reset
+   
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure, button { margin:0; padding:0; }
+
+table { border-collapse:collapse; border-spacing:0; }
+
+fieldset,img { border:0; }
+
+address,caption,cite,code,dfn,em,strong,th,var { font-style:normal; font-weight:normal; }
+
+ol,ul { list-style:none; }
+
+caption,th { text-align:left; }
+
+q:before,q:after { content:""; }
+
+abbr,acronym { border:0; }
+
+/* change the box – model makes the final rendered box the declared width, and any border and padding cut inside the box [http://css-tricks.com/box-sizing/] */
+
+* { 
+	// Firefox, other Gecko
+	-moz-box-sizing: border-box;
+	// Safari/Chrome, other WebKit
+	-webkit-box-sizing: border-box;
+	// Opera/IE 8+
+	box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Group - clears floated elements [http://css-tricks.com/snippets/css/clear-fix/]
+   ========================================================================== */
+   
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
