@@ -1,57 +1,80 @@
-// !Author @squirrelfactory
+//!Author @squirrelfactory
 
-// global reset
 @import "reset";
-
-// variables + mixins
 @import "modules";
-
-
+@import "print";
+@import "vendor";
 
 body {
-	-webkit-text-size-adjust:100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-	-ms-text-size-adjust:100%; /* Stops Mobile IE from auto-adjusting font-sizes */
-	/*-webkit-font-smoothing: antialiased; /* maxvoltar.com/archive/-webkit-font-smoothing */
+	-webkit-text-size-adjust:100%; // Prevent mobile safari and mobile IE from auto-adjusting font-sizes
+	-ms-text-size-adjust:100%;
+	-webkit-font-smoothing: antialiased; // maxvoltar.com/archive/-webkit-font-smoothing
 	background:#fff;
 	color:#444;
 	font-family:'Open Sans', sans-serif;
 	font-size:100%;
+	line-height: 1.5em;
 } 
 
-@media all and (min-width: 62.5em) { /* 1000px */
+// greater than 1000px
+@media all and (min-width: px(1200)) {
 	body {
 		font-size:125%;
 	}
 }
 
-@media all and (min-width: 75em) { /* 1200px */
+// greater than 1200px
+@media all and (min-width: px(1400)) {
 	body {
 		font-size:140%;
 	}
 }
 
 
-
-h1,h2,h3,h4,h5,h6 {
-	margin:1em 0 1em;
-	color:#444;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 px(16) 0;
+	color: #444;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 }
 
-h1 { font-size:1.4375em; }
-h2 { font-size:1.3125em; }
-h3 { font-size:1.1875em; }
-h4 { font-size:1.0625em; }
-h5 { font-size:1.0625em; }
-h6 { font-size:1.0625em; }
+h1 {
+	font-size:px(26);
+}
+
+h2 {
+	font-size:px(23);
+}
+
+h3 {
+	font-size:px(20);
+}
+
+h4 {
+	font-size:px(18);
+}
+
+h5 {
+	font-size:px(17);
+}
+
+h6 {
+	font-size:px(17);
+}
 
 
-p, address, caption {
-	font-size:0.875em;
-	font-weight:normal;
-	line-height:1.5625em;
-	margin:0 0 1.5625em 0;
+p,
+address,
+caption {
+	font-size: px(13);
+	font-weight: normal;
+	line-height: 1.5625em;
+	margin: 0 0 1.5625em 0;
 }
 
 hr {
@@ -87,13 +110,13 @@ pre li {
 
 blockquote {
 	font-style:italic;
-	line-height:1.8em; /* NEEDS ATTENTION */
+	line-height:1.8em; // needs attention
 	margin:0 0 1.5625em 0;
 	padding:0;
 }
 
-/* Lists */
 
+// Lists
 ol {
 	list-style-type:decimal;
 	margin:10px 0 25px 22px;
@@ -128,7 +151,9 @@ table td {
 	line-height:1.6em; /* NEEDS ATTENTION */
 }
 
-li li { font-size:1em; }
+li li {
+	font-size:1em;
+}
 
 
 /* 
@@ -171,10 +196,15 @@ small {
 }
 
 s {}
+
 cite {}
+
 q {}
+
 dfn {}
+
 abbr {}
+
 time {}
 
 code {
@@ -201,20 +231,19 @@ span {}
 ins {}
 del {}
 
-/* Used to remove iOS styling of phone numbers
- * Need to test this on Android devices	
-*/
+// Used to remove iOS styling of phone numbers
+// Need to test this on Android devices	
 a[href^=tel]{
     color:inherit;
     text-decoration:none;
 }
 
-/* Embedded Content
-   ========================================================================== */
+
+// Embedded Content
    
 img {
 	margin:0;
-	max-width:100%; /* Only comes into play on responsive sites */
+	max-width:100%; // Only comes into play on responsive sites */
 }
 
 iframe {
@@ -243,8 +272,7 @@ canvas {
 }
 
 
-/* Tabular Data
-   ========================================================================== */
+// Tabular Data
    
 table {
 	border:1px solid #d7d7d7;
@@ -267,16 +295,19 @@ table td {
 	padding:0.43752em;
 }
 
-/* Use for table striping */
+// Use for table striping
+
 table tbody tr.oddrow th,
 table tbody tr.oddrow td {
 	background:#f8fdff;
 }
 
-table tfoot th { background:#dadada; }
+table tfoot th {
+	background:#dadada;
+}
 
-/* Forms
-   ========================================================================== */
+// Forms
+
    
 fieldset { 
 	background:#e1e0e0;
@@ -285,7 +316,9 @@ fieldset {
 	padding:10px;
 }
 
-fieldset p { margin:0; }
+fieldset p {
+	margin:0;
+}
 
 legend {
 	background:#fff;
@@ -330,8 +363,8 @@ textarea {
 }
 
 input[type="search"]{
-	-moz-appearance:none; /* removes default browser styling*/
-	-webkit-appearance:none; /* removes default browser styling*/
+	-moz-appearance:none; // removes default browser styling
+	-webkit-appearance:none; // removes default browser styling
 }
 
 input[ type="color" ]{
@@ -369,9 +402,9 @@ button[type="submit"],
 	font-size:0.9em;
 	margin:0 0 10px 0;
 	width:auto;
-	overflow:visible; /* IE 7 width fix */
-	-webkit-appearance:none; /* Removes webkit styling */
-	-moz-appearance:none; /* Removes webkit styling */
+	overflow:visible; // IE 7 width fix
+	-webkit-appearance:none; // Removes webkit default styling
+	-moz-appearance:none; // Removes webkit default styling
 	display:inline-block;
 	letter-spacing: 0.1em;
 	text-align: center;
@@ -396,9 +429,8 @@ button[type="submit"]:hover,
 
 
 
-/* ==========================================================================
-   Grids
-   ========================================================================== */
+// Grids
+
 
 .grid {
 	padding:0.25em;
@@ -406,7 +438,6 @@ button[type="submit"]:hover,
 	margin:0 0 40px 0;
 	list-style-type: none;
 }
-
 
 .grid li {
 	float: left;
@@ -480,14 +511,10 @@ button[type="submit"]:hover,
 }
 
 
-/* Grid Listing
-   ========================================================================== */
-
-/* Inspiration and code from [http://codepen.io/bradfrost/full/GlrHv]
- * Standard listing stacked one above each other for small screens
- * Listing changes to grid depending on screen width
-*/
-
+// Responsive Grid Listing
+// Inspiration and code from [http://codepen.io/bradfrost/full/GlrHv]
+// Standard listing stacked one above each other for small screens
+// Listing changes to grid depending on screen width
 
 .listing {
 	margin:0 0 20px 0;
@@ -526,10 +553,6 @@ button[type="submit"]:hover,
 	display: table-cell;
 	vertical-align: top;
 	width: 60%;
-}
-
-.listing li .details h3{
-
 }
 
 
@@ -571,14 +594,13 @@ button[type="submit"]:hover,
 }
   
 
-/* ==========================================================================
-   Site Specific Styles
-   ========================================================================== */
+// Site Specific Styles Go Here
+//--------------------------------------------------------------------------
 header {
 	border-bottom:2px solid #efefef;
 }
 
-header img{
+header img {
 	float:left;
 	margin:0 20px 20px 0;
 }
@@ -595,23 +617,18 @@ header h1 {
 	border-bottom:2px solid #efefef;
 }
 
-
 .body-alternate {
 	background:#f5f5f2;	
 }
-
-
-
-
 
 .body h1:first-child {
 	font-weight: 800;
 	text-transform: uppercase;
 }
 
-/* ==========================================================================
-   Responsive Menu
-   ========================================================================== */
+
+// Responsive Menu
+
 a.menu-link {
 	float: right;
 	display: block;
@@ -619,7 +636,6 @@ a.menu-link {
 	line-height: 0;
 	background:#e6e6e6;
 	font-size: 2em;
-
 }
 		
 nav[role=navigation] {
@@ -629,11 +645,10 @@ nav[role=navigation] {
 	-ms-transition: all 0.3s ease-out;
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
-	background:#e6e6e6;
-		
+	background:#e6e6e6;	
 }
 
-/* Hide the menu on initail viewport */
+/* Hide the menu on inital viewport */
 .js nav[role=navigation] {
 	overflow: hidden;
 	max-height: 0;
@@ -685,214 +700,3 @@ nav[role=navigation] li a:hover {
 		background:#d9d9d9;
 	}
 }   
-/* ==========================================================================
-   Print Stylesheet
-   ========================================================================== */
-
-@media print {
-body {
-		width:100% !important;
-		margin:0 !important;
-		padding:0 !important;
-		line-height: 1.4em;
-		font-size:12pt;
-		background:none;
-		color:#444;
-	}
-	
-	/* Headings */
-	h1, h2, h3, h4, h5, h6 { 
-		margin:20px 0 10px 0;
-		color:#000;
-	}
-	
-	h1 { 
-		font-size:16pt;
-		background:none;
-		margin-bottom:20px;
-	}
-	
-	h2 { font-size:14pt; }
-	
-	h3 { font-size:12pt; }
-	
-	h4, h5, h6 { font-size:12pt; }
-	
-	hr { background-color: #ccc; }
-		
-	/* Images */
-	img { margin: 1em 1.5em 1.5em 0; }
-	
-	a img { border: none; }
-	
-	/* Links */
-	a:link,
-	a:visited {
-		background: transparent;
-		text-decoration: underline;
-		color:#333;
-	}
-	
-	/* Table */
-	caption { 
-		background: #fff;
-		margin-bottom:2em;
-		text-align:left;
-	}
-	
-	tr { page-break-inside: avoid; } 
-
-
-/* Custom Print Styles
-   ========================================================================== */
-   
-	#id {
-	display:none;
-	}
-
-	/* Masthead */
-	#print-masthead {
-	width:100% !important;
-	display:block;
-	text-align:left;
-	height:145px;
-	padding:10px;
-	margin:0;
-	border-bottom:1px solid #c4c4c4;
-	}
-	
-	#print-masthead p {
-	float:right;
-	padding:0 10px 0 0;
-	margin:0 0px 0 0;
-	text-align:right;
-	width:8cm;
-	font-size:8pt;
-	}
-	
-	#print-masthead img {
-	margin:0px 0px 0px 0px;
-	}
-	
-	#content-wrapper {
-	width:100% !important;
-	border:none;
-	background:#FFF;
-	}
-	
-	#content {
-	width:100% !important;
-	margin:0;
-	padding:0;
-	}
-}
- 
- 
- 
-/**
- * prism.js default theme for JavaScript, CSS and HTML
- * Based on dabblet (http://dabblet.com)
- * @author Lea Verou
- */
-
-code[class*="language-"],
-pre[class*="language-"] {
-	color: black;
-	text-shadow: 0 1px white;
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	
-	-moz-tab-size: 4;
-	-o-tab-size: 4;
-	tab-size: 4;
-	
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-}
-
-@media print {
-	code[class*="language-"],
-	pre[class*="language-"] {
-		text-shadow: none;
-	}
-}
-
-/* Code blocks */
-pre[class*="language-"] {
-	padding: 1em;
-	margin: .5em 0;
-	overflow: auto;	
-}
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-	background: #f5f2f0;
-}
-
-/* Inline code */
-:not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
-}
-
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: slategray;
-}
-
-.token.punctuation {
-	color: #999;
-}
-
-.namespace {
-	opacity: .7;
-}
-
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number {
-	color: #905;
-}
-
-.token.selector,
-.token.attr-name,
-.token.string {
-	color: #690;
-}
-
-.token.operator,
-.token.entity,
-.token.url,
-.language-css .token.string,
-.style .token.string {
-	color: #a67f59;
-	background: hsla(0,0%,100%,.5);
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #07a;
-}
-
-
-.token.regex,
-.token.important {
-	color: #e90;
-}
-
-.token.important {
-	font-weight: bold;
-}
-
-.token.entity {
-	cursor: help;
-}
