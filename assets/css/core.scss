@@ -1,5 +1,4 @@
 //!Author @squirrelfactory
-
 @import "reset";
 @import "modules";
 @import "print";
@@ -19,14 +18,14 @@ body {
 // greater than 1000px
 @media all and (min-width: px(1200)) {
 	body {
-		font-size:125%;
+		font-size:110%;
 	}
 }
 
 // greater than 1200px
 @media all and (min-width: px(1400)) {
 	body {
-		font-size:140%;
+		font-size:120%;
 	}
 }
 
