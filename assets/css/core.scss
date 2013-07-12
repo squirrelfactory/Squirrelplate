@@ -245,6 +245,11 @@ img {
 	max-width:100%; // Only comes into play on responsive sites */
 }
 
+a img, 
+a:visited img {
+	text-decoration: none;
+}
+
 iframe {
 	background:#fff;
 	border:none;
@@ -375,9 +380,11 @@ input[ type="color" ]{
 input[ type="radio" ],
 input[type="checkbox"]{ }
 
-select {
-	font-size:1.125em;
+input[ type="select" ]{
+	font-size:0.875em;
 	width:100%;
+	border-color:#999;
+	font-family:"Lucida Grande", Lucida Sans, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 input[ type="range" ]{
