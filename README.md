@@ -20,7 +20,7 @@ first- and second-generation iPad: apple-touch-icon-72x72-precomposed.png or app
 non-Retina iPhone and iPod Touch: apple-touch-icon-57x57-precomposed.png or apple-touch-icon-57x57.png
 fallback for everything else (possibly including non-Apple devices): apple-touch-icon-precomposed.png and apple-touch-icon.png
 
-*Favicon
+* Favicon
 [http://mathiasbynens.be/notes/rel-shortcut-icon]
 
 * Respond.js [https://github.com/scottjehl/Respond]
