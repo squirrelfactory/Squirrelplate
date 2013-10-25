@@ -1,8 +1,8 @@
 //!Author @squirrelfactory
-@import "reset";
-@import "modules";
-@import "print";
-@import "vendor";
+@import "includes/reset";
+@import "includes/modules";
+@import "includes/print";
+@import "includes/vendor";
 
 body {
 	-webkit-text-size-adjust:100%; // Prevent mobile safari and mobile IE from auto-adjusting font-sizes
@@ -15,7 +15,7 @@ body {
 	line-height: 1.5em;
 } 
 
-// greater than 1000px
+/*
 @media all and (min-width: px(1200)) {
 	body {
 		font-size:110%;
@@ -28,7 +28,7 @@ body {
 		font-size:120%;
 	}
 }
-
+*/
 
 h1,
 h2,

@@ -14,12 +14,7 @@ Internet Explorer has many rendering engines ready for use. What this line of co
 provides webmaster tools with verification of site ownership
 
 * Touch Icons – inspiration from h5bp and (mathiasbynens.be/notes/touch-icons)
-iPad 3+ (with Retina Display): apple-touch-icon-144x144-precomposed.png or apple-touch-icon-144x144.png
-iPhone 4+ (with Retina Display): apple-touch-icon-114x114-precomposed.png or apple-touch-icon-114x114.png
-first- and second-generation iPad: apple-touch-icon-72x72-precomposed.png or apple-touch-icon-72x72.png
-non-Retina iPhone and iPod Touch: apple-touch-icon-57x57-precomposed.png or apple-touch-icon-57x57.png
-fallback for everything else (possibly including non-Apple devices): apple-touch-icon-precomposed.png and apple-touch-icon.png
-
+apple-touch-icon-precomposed.png (154x154)
 * Favicon
 [http://mathiasbynens.be/notes/rel-shortcut-icon]
 
