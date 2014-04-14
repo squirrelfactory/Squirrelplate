@@ -1,4 +1,4 @@
-//!Author @squirrelfactory
+//!Author ??
 @import "includes/reset";
 @import "includes/modules";
 @import "includes/print";
@@ -7,76 +7,53 @@
 body {
 	-webkit-text-size-adjust:100%; // Prevent mobile safari and mobile IE from auto-adjusting font-sizes
 	-ms-text-size-adjust:100%;
-	-webkit-font-smoothing: antialiased; // maxvoltar.com/archive/-webkit-font-smoothing
+	-webkit-font-smoothing: antialiased;
 	background:#fff;
 	color:#444;
 	font-family:'Open Sans', sans-serif;
 	font-size:100%;
 	line-height: 1.5em;
+	padding:7%;
 } 
 
-/*
-@media all and (min-width: px(1200)) {
-	body {
-		font-size:110%;
-	}
-}
-
-// greater than 1200px
-@media all and (min-width: px(1400)) {
-	body {
-		font-size:120%;
-	}
-}
-*/
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0 0 px(16) 0;
-	color: #444;
-	font-weight: 400;
-}
 
 h1 {
-	font-size:px(26);
+	font-size:emify(26);
+	font-weight: 800;
+	color: #444;
 }
 
 h2 {
-	font-size:px(23);
+	font-size:emify(23);
 }
 
 h3 {
-	font-size:px(20);
+	font-size:emify(20);
 }
 
 h4 {
-	font-size:px(18);
+	font-size:emify(18);
 }
 
 h5 {
-	font-size:px(17);
+	font-size:emify(17);
 }
 
 h6 {
-	font-size:px(17);
+	font-size:emify(17);
 }
 
 
 p,
 address,
 caption {
-	font-size: px(13);
+	font-size: emify(13);
 	font-weight: normal;
-	line-height: 1.5625em;
-	margin: 0 0 1.5625em 0;
+	margin: 0 0 1em 0;
 }
 
 hr {
-	margin:1.25em 0 2.5em 0;
+	margin:1em 0 2.5em 0;
 	border:none;
 	clear:both;
 	color:#d9d9d9;
@@ -108,8 +85,8 @@ pre li {
 
 blockquote {
 	font-style:italic;
-	line-height:1.8em; // needs attention
-	margin:0 0 1.5625em 0;
+	line-height:2em; // needs attention
+	margin:0 0 1em 0;
 	padding:0;
 }
 
@@ -131,7 +108,7 @@ dl {
 
 figure { 
 	margin-bottom:25px;
-	font-size:0.875em;
+	font-size:emify(12);
 }
 
 figcaption {
@@ -145,12 +122,12 @@ dd,
 table th,
 table td {
 	color:#37351b;
-	font-size:0.875em; /* NEEDS ATTENTION */
+	font-size:emify(12); /* NEEDS ATTENTION */
 	line-height:1.6em; /* NEEDS ATTENTION */
 }
 
 li li {
-	font-size:1em;
+	font-size:emify(15);
 }
 
 
@@ -164,7 +141,7 @@ td li,
 td h1,
 td h2, 
 li p{
-	font-size:1em !important;
+	font-size:emify(16)!important;
 }
 
 /* Text level semantics
@@ -253,12 +230,12 @@ iframe {
 	background:#fff;
 	border:none;
 	border-radius:4px;
-	margin:0 0 1.5625em 0;
+	margin:0;
 	width:100%;
 }
 
 video {
-	margin:0 0 1.5625em 0;
+	margin:0;
 }
 
 // Responsive videos (you tube)
@@ -270,26 +247,24 @@ video {
     iframe,
 	.video-container object,
 	.video-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
 	}
 }
- 
-
 
  
 audio {
-	margin:0 0 1.5625em 0;
+	margin:0;
 }
 
 canvas {
 	background:#efefef;
 	border:none;
 	border-radius:4px;
-	margin:0 0 1.5625em 0;
+	margin:0;
 	width:100%;
 	height:200px;
 }
@@ -299,7 +274,7 @@ canvas {
    
 table {
 	border:1px solid #d7d7d7;
-	margin:0 0 2em 0;
+	margin:0 0 30px 0;
 	width:100%;
 }
 
@@ -315,7 +290,7 @@ table th {
 table th,
 table td {
 	border-bottom:1px solid #d7d7d7;
-	padding:0.43752em;
+	padding:5px;
 }
 
 // Use for table striping
@@ -348,7 +323,7 @@ legend {
 	border:1px solid #c3c3c3;
 	border-radius:4px;
 	font-weight:bold;
-	padding:0.3125em;
+	padding:5px;
 }
 
 label {
@@ -374,9 +349,9 @@ textarea {
 	border:1px solid #c3c3c3;
 	border-radius:4px;
 	color:#000;
-	font-size:0.875em;
-	margin:0.3125em 0 0.3125em 0;
-	padding:0.3125em;
+	font-size:emify(14);
+	margin:5px 0 5px 0;
+	padding:5px;
 	vertical-align:middle;
 	width:100%;
 	-webkit-appearance: none;
@@ -404,11 +379,11 @@ input[ type="select" ]{
 	font-size:0.875em;
 	width:100%;
 	border-color:#999;
-	font-family:"Lucida Grande", Lucida Sans, "Helvetica Neue", Helvetica, sans-serif;
+	font-family:'Open Sans', "Lucida Grande", Lucida Sans, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 input[ type="range" ]{
-	font-size:1.125em;
+	font-size:emify(14);
 	width:100%;
 }
 
@@ -452,283 +427,3 @@ button[type="submit"]:hover,
 	background:red;
 	color:#FFF;
 }
-
-
-
-// Grids
-
-
-.grid {
-	padding:0.25em;
-	overflow: hidden;
-	margin:0 0 40px 0;
-	list-style-type: none;
-}
-
-.grid li {
-	float: left;
-	width: 100%;
-	padding:0.25em;
-	display: list-item;
-}
-
-.grid img {
-	display: block;
-	border:1px solid #fff;
-}
-
-.grid img:hover {
-	border:1px solid #ababab;
-}
-
-.grid li:nth-child(odd) {
-	clear: left;
-}
-
-
-@media screen and (min-width: 640px) {
-	.grid li {
-		width: 33.3333333333333333%; 
-	}
-	
-	.grid li:nth-child(3n+1) {
-		clear: left;
-	}
-	
-	.grid li:nth-child(odd) {
-		clear: none;
-	}
-}
-
-@media screen and (min-width: 880px) {
-	.grid li {
-		width: 25%; 
-	}
-	.grid li:nth-child(4n+1) {
-		clear: left;
-	}
-	.grid li:nth-child(3n+1) {
-		clear: none;
-	}
-}
-
-@media screen and (min-width: 1152px) {
-	.grid li {
-		width: 20%; 
-	}
-	.grid li:nth-child(5n+1) {
-		clear: left;
-	}
-	.grid li:nth-child(4n+1) {
-		clear: none;
-	}
-}
-		
-@media screen and (min-width: 1440px) {
-	.grid li {
-		width: 16.666666666%; 
-	}
-	.grid li:nth-child(6n+1) {
-		clear: left;
-	}
-	.grid li:nth-child(5n+1) {
-		clear: none;
-	}
-}
-
-
-// Responsive Grid Listing
-// Inspiration and code from [http://codepen.io/bradfrost/full/GlrHv]
-// Standard listing stacked one above each other for small screens
-// Listing changes to grid depending on screen width
-
-.listing {
-	margin:0 0 20px 0;
-	padding:0;
-	list-style-type: none;
-}
-   
-.listing li {
-	display: table;
-	border-collapse: collapse;
-	width: 100%;
-	margin:0 0 10px 0;
-	border-bottom:1px solid #dbdbdb;
-}
-
-.inner {
-  display: table-row;
-  overflow: hidden;
-}
-   
-.listing li .img-holder{
-	display: table-cell;
-	vertical-align: top; /* works due to display table */
-	width: 40%;
-	padding-right: 1em;
-}
-
-.listing li .img-holder img{
-	display:block;
-	width:100%;
-	height:auto;
-	padding-bottom:10px;
-}
-
-.listing li .details{
-	display: table-cell;
-	vertical-align: top;
-	width: 60%;
-}
-
-
-@media all and (min-width: 640px) {
-	.listing {
-	    margin: 0 auto;
-	    overflow: hidden;
-	}
-	  
-	.listing li {
-	    padding:0 15px 15px 0;
-	    display: block;
-	    width: 50%;
-	    float: left;
-	    border:none;
-	}
-	  
-	.listing li .img-holder, .listing li .details, .inner{
-	    display: block;
-	    width: auto;
-	    padding: 0;
-	  }
-	
-	.listing li .details {
-	    padding: 10px;
-	}
-}
-
-@media all and (min-width: 900px) {
-
-	.listing li {
-    	width: 33.33333333%;
-    }
-    
-    /* Every 4th element clear left */
-    .listing li:nth-child(3n+1) {
-		clear: left;
-	}
-}
-  
-
-// Site Specific Styles Go Here
-//--------------------------------------------------------------------------
-header {
-	border-bottom:1px solid #efefef;
-	
-	img {
-		float:left;
-		margin:0 20px 0px 0;
-	}
-	
-	h1 {
-		margin:0;
-		font-size:px(14);
-		font-weight: 600;
-		padding:5px;
-	}
-}
-
-
-
-
-.body {
-	padding:1.125em 10%;
-}
-
-.body-full{
-	border-bottom:2px solid #efefef;
-}
-
-.body-alternate {
-	background:#f5f5f2;	
-}
-
-.body h1:first-child {
-	font-weight: 800;
-	text-transform: uppercase;
-}
-
-
-// Responsive Menu
-
-a.menu-link {
-	float: right;
-	display: block;
-	padding: 35px 10px;
-	line-height: 0;
-	background:#e6e6e6;
-	font-size: 2em;
-}
-		
-nav[role=navigation] {
-	clear: both;
-	-webkit-transition: all 0.3s ease-out;  
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	background:#e6e6e6;	
-}
-
-/* Hide the menu on inital viewport */
-.js nav[role=navigation] {
-	overflow: hidden;
-	max-height: 0;
-}
-
-nav[role=navigation].active {
-	max-height: 15em;
-}
-
-nav[role=navigation] ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-nav[role=navigation] li a {
-	display: block;
-	padding: 0.8em;
-	border-bottom: 1px solid #fff;
-}
-
-nav[role=navigation] li a:hover {
-	background:#d4d4d4;
-}
-
-
-
-@media screen and (min-width: 48.25em) {
-	a.menu-link {
-		display: none;
-	}
-	
-	.js nav[role=navigation] {
-		max-height: none;
-	}
-	
-	nav[role=navigation] ul {
-		margin: 0 0 0 0;
-		border: 0;
-	}
-			
-	nav[role=navigation]  li {
-		float:left;
-		margin: 0 0.1em 0 0;
-	}
-	
-	nav[role=navigation] li a {
-		border: 0;
-		background:#d9d9d9;
-	}
-}   
